@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Questly</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <script>
+    /* JavaScript can use C-style comment blocks.
+     * They can span multiple lines.
+     * Author: Dave
+     */
+
+    // Javascript can also use C++ style single-line comments.
+    // Use this style, because it's less error-prone.
+
+
+
+
+
+
+
+
+
+
+
+    // LAB TIME!
+    // Change the alert box to greet the person by name.
+    //prompt("HI! What's your name?"); // Double-quotes this time
+    //alert('Nice to meet you.');
+
+
+    var name = prompt("HI! What's your name?"); // Double-quotes this time
+    alert('Nice to meet you, ' + name + '.');
+
+
+
+
+
+
+
+
+
+
+
+
+// LAB TIME!
+// Write a script that does the following things:
+//
+// Print "Enter your name" to a prompt
+// Grab the user's input.
+// Print "Enter your secret agent name" to a prompt.
+// Grab the user's input.
+// Prompt with "Tell me a story about yourself."
+// Grab the user's input.
+// Spit back the story in an alert, replacing the person's name with the person's secret agent name.
+
+
+var name = prompt('What is your name?');
+var secretName = prompt('What is your secret agent name?');
+var story = prompt('Tell me a story about yourself.');
+var thingToSearchFor = new RegExp(name, 'g');
+//var thingToSearchFor = new RegExp(name, 'gi'); // case insensitive
+story = story.replace(thingToSearchFor, secretName);
+alert(story);
+
+
+
+
+/(^|\s)Cat(\s|$)/gi
+
+
+
+
+
+  </script>
+
+</body>
+</html>
